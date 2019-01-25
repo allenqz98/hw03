@@ -1,12 +1,10 @@
 defmodule Practice.Factor do
   def factor(x) do
-    {x, _} = Integer.parse(x)
     factor_help(x, 2, [])
   end
 
   def factor_help(num, div, list) do
     cond do
-
       num < div ->
         list
       num == div ->
